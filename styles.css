@@ -4,6 +4,7 @@ body{
     background-color: #b7aeff;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto', sans-serif;
     /*height: 100vh;*/
     /*overflow: hidden;*/
 }
@@ -27,7 +28,6 @@ header{
 
 h1{
     color: #fff;
-    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     /*padding-top: 10px;*/
     padding-left: 70px;
@@ -78,7 +78,6 @@ li a {
     color: #fff;
     /*width: 100%;*/
     /*height: 20px;*/
-    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     text-decoration: none;  /*removes underline from link*/
     padding: 8px;     /*padding around link*/
@@ -91,11 +90,12 @@ li a:hover{
 #hero{
     display: flex;
     justify-content: center;
-    /*width: 960px;*/
-    height: 420px;
-    flex: 1 1 auto;
+    width: 100%;
+    height: 100%;
+    /*flex: 1 1 auto;*/
     flex-direction: column;
-    background: url("https://unsplash.it/960/420images?image=974");
+    background: url("https://unsplash.it/1000/460images?image=974");
+    background-size: 100% 100%;
 }
 
 #newWebsite{
@@ -148,8 +148,118 @@ li a:hover{
 #content{
     background-color: #ffffff;
     color: #000;
-    font-size: 8px;
+    /*font-size: 8px;*/
     font-family: 'Roboto', sans-serif;
     padding-left: 70px;
+    padding-right: 60px;
+}
 
+#left{
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    column-count: 2;
+}
+
+#explore{
+    font-size: 12px;
+}
+
+#organize{
+    font-size: 12px;
+}
+
+#right{
+    -moz-columns: 2;
+    -webkit-columns: 2;
+    column-count: 2;
+}
+
+#description{
+    font-size: 12px;
+}
+
+#disclaimer{
+    font-size: 12px;
+}
+
+#pictures{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#plans{
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    padding: 25px;
+}
+
+#recommended{
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#recommended button{
+    background-color: #b7aeff;
+    color: #ffffff;
+    border: none;
+    width: 180px;
+}
+
+.thumbnails {
+    overflow: hidden;
+    background-color: #ffffff;
+    display: flex;
+    align-content: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #ffffff;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.box1{
+    display: flex;
+    width: 350px;
+    height: 150px;
+    background-color: lightgray;
+}
+
+.box2{
+    display: flex;
+    width: 330px;
+    height: 150px;
+    background-color: lightgray;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.box3{
+    display: flex;
+    width: 350px;
+    height: 150px;
+    background-color: lightgray;
+}
+
+.galleryItem{
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.galleryItem button{
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    width: 350px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#map{
+    display: flex;
 }
