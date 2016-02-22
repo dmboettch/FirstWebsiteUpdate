@@ -1,0 +1,155 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #b7aeff;
+    display: flex;
+    flex-direction: column;
+    /*height: 100vh;*/
+    /*overflow: hidden;*/
+}
+
+
+#container{
+    background-color: #ff24ea;
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    /*height: 100vh;*/
+}
+
+header{
+    background-color: #000000;
+    /*width: 100%;*/
+    height: 60px;
+    display: flex;
+    justify-content: space-between;  /*puts Weblab at start and icons at end*/
+}
+
+h1{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    /*padding-top: 10px;*/
+    padding-left: 70px;
+    float: left;
+    /*margin: 0;*/
+}
+
+#icons{
+    /*float: right;*/
+    padding-top: 15px;
+    padding-right: 70px;
+    /*flex: 0 0 auto;*/
+}
+
+#icons img{
+    padding: 10px;
+}
+
+#navbar{
+    background-color: #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+ul, li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+li{
+    float: left;
+    display: inline;
+    background-color: #3b3b3b;
+}
+ul:after{   /*sometimes uses :: but not all browsers recognize it insert after ul*/
+    /*need to do this to identify the ul because we are using a float*/
+    content: "";
+    clear: both;
+    height: 0;
+    width: 0;
+    display: block;
+}
+li a {
+    display: block;      /*Display link as a block to make area clickable*/
+    background-color: #3b3b3b;
+    color: #fff;
+    /*width: 100%;*/
+    /*height: 20px;*/
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-decoration: none;  /*removes underline from link*/
+    padding: 8px;     /*padding around link*/
+}
+
+li a:hover{
+    background-color: #000;
+}
+
+#hero{
+    display: flex;
+    justify-content: center;
+    /*width: 960px;*/
+    height: 420px;
+    flex: 1 1 auto;
+    flex-direction: column;
+    background: url("https://unsplash.it/960/420images?image=974");
+}
+
+#newWebsite{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 45px;
+    padding-left: 70px;
+    float: left;
+}
+
+#signUp{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-left: 70px;
+    float: left;
+}
+
+#emailBox{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    padding-left: 70px;
+    float: left;
+}
+
+#box{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#findOut{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    padding-left: 70px;
+    padding-top: 20px;
+    float: left;
+}
+
+#subscribe{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #000000;
+}
+
+#content{
+    background-color: #ffffff;
+    color: #000;
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    padding-left: 70px;
+
+}
